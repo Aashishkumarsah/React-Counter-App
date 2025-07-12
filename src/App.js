@@ -3,8 +3,10 @@ import './App.css';
 
 const AddButton = (props) => {
 
+  const { count, setCount } = props;
+
   const onIncrementClick = () => {
-    props.setCount (props.count + 1);
+    setCount (count + 1);
   }
 
   return (
@@ -14,8 +16,10 @@ const AddButton = (props) => {
 
 const DecrementButton = (props) => {
 
+    const { count, setCount } = props;
+
    const onDecrementClick = () => {
-    props.setCount (props.count - 1);
+    setCount (count - 1);
   }
 
   return (
