@@ -1,9 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 
-const AddButton = (props) => {
-
-  const { count, setCount } = props;
+const AddButton = ({count, setCount}) => {
 
   const onIncrementClick = () => {
     setCount (count + 1);
@@ -14,9 +12,7 @@ const AddButton = (props) => {
   )
 }
 
-const DecrementButton = (props) => {
-
-    const { count, setCount } = props;
+const DecrementButton = ({ count, setCount }) => {
 
    const onDecrementClick = () => {
     setCount (count - 1);
